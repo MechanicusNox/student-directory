@@ -5,9 +5,7 @@ end
 
 def print(names) #prints student names and cohort
   names.each.with_index(1) do |details, index|
-    if details[:name].chr.upcase == "A"
-      puts "#{index}: #{details[:name]} (#{details[:cohort]} cohort)"
-    end
+    puts "#{index}: #{details[:name]} (#{details[:cohort]} cohort)"
   end
 end
 
@@ -30,7 +28,7 @@ def input_students  #adds students to array which is returned
     #get another name
     name = gets.chomp
   end
-  #return aray of students
+  #return array of students
   students
 end
 
