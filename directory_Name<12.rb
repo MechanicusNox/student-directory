@@ -5,7 +5,9 @@ end
 
 def print(names) #prints student names and cohort
   names.each.with_index(1) do |details, index|
-    puts "#{index}: #{details[:name]} (#{details[:cohort]} cohort)"
+    if details[:name].length < 12
+      puts "#{index}: #{details[:name]} (#{details[:cohort]} cohort)"
+    end
   end
 end
 
